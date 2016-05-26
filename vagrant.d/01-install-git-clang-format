@@ -1,0 +1,6 @@
+#!/bin/bash -x
+
+wget https://raw.githubusercontent.com/llvm-mirror/clang/master/tools/clang-format/git-clang-format
+sudo mv git-clang-format /usr/local/bin/.
+sudo chmod a+x /usr/local/bin/git-clang-format
+sudo ln -s `which clang-format-3.6` /usr/local/bin/clang-format
