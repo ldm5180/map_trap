@@ -5,7 +5,7 @@ Vagrant.configure(2) do |config|
   if Vagrant.has_plugin?("vagrant-timezone")
     config.timezone.value = :host
   end
-  config.vm.box = "ubuntu/wily64"
+  config.vm.box = "ubuntu/zesty64"
   config.vm.provider "virtualbox" do |vb|
     vb.memory = "4096"
     vb.cpus = "4"
