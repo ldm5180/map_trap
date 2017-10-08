@@ -81,6 +81,9 @@ include_directories("include/range-v3/include")
 # Setup unit tests
 enable_testing()
 
+
+add_subdirectory(vendor/googletest)
+
 # Add the directories containing more CMakeLists.
 add_subdirectory(lib)
 add_subdirectory(src)

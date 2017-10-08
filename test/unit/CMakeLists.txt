@@ -1,10 +1,9 @@
 # GTest code is not built when it is installed. Create a list of the source
 # files to be used downstream when creating the binary.
 # Add flags needed for building gtest, then build and set the flags back.
-include_directories(/usr/include/gtest)
+include_directories(${CMAKE_SOURCE_DIR}/vendor/googletest/googlemock/include)
 set(LOCAL_CXX_FLAGS ${CMAKE_CXX_FLAGS})
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-missing-field-initializers")
-add_subdirectory(/usr/src/gtest ${CMAKE_CURRENT_BINARY_DIR}/gtest)
 set(CMAKE_CXX_FLAGS ${LOCAL_CXX_FLAGS})
 
 # Special macro for adding unit tests.
