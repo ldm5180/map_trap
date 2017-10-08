@@ -1,0 +1,16 @@
+#!/bin/bash
+
+echo "
+unbind C-b
+set -g prefix C-a
+bind a send-prefix
+
+unbind r
+bind r source-file ~/.tmux.conf
+
+bind-key C-a 'last-window'
+
+set -g history-limit 50000
+
+set -g set-titles on
+" > ~/.tmux.conf
