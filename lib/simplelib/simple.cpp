@@ -2,6 +2,6 @@
 
 namespace LibSimple {
 
-int Simple::value() const { return val; }
+int Simple::value() const { return value_; }
 
 } // LibSimple

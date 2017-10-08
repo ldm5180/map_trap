@@ -7,12 +7,12 @@ inline namespace v1 {
 class Simple {
 public:
   constexpr Simple() = default;
-  explicit Simple(const int v) : val(v) {}
+  explicit Simple(const int v) : value_(v) {}
 
   int value() const;
 
 private:
-  int val{};
+  int value_{};
 };
 
 } // v1

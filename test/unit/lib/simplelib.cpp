@@ -13,5 +13,5 @@ TEST_F(SimpleTest, should_have_default_value) {
 }
 
 TEST_F(SimpleTest, should_have_initialized_value) {
-  EXPECT_EQ(42, LibSimple::Simple{}.value(42));
+  EXPECT_EQ(42, LibSimple::Simple(42).value());
 }
