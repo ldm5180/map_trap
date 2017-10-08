@@ -1,3 +1,0 @@
-#!/bin/bash -x
-
-sudo ln -s /usr/lib/llvm-4.0/bin/git-clang-format /usr/local/bin/clang-format
