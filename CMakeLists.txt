@@ -76,7 +76,6 @@ set(CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE}")
 set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -fno-rtti")
 
 include_directories("include")
-include_directories("include/range-v3/include")
 
 # Setup unit tests
 enable_testing()

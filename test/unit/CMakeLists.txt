@@ -22,4 +22,5 @@ macro(add_unit_test target target_test)
 
 endmacro(add_unit_test)
 
+include_directories(${CMAKE_SOURCE_DIR}/vendor/googletest/googlemock/include)
 add_subdirectory(lib)
