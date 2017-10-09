@@ -2,6 +2,12 @@
 
 sudo apt-get update
 sudo apt-get install -y \
+     ccache \
      clang \
      clang-format \
-     cmake
+     cmake \
+     libc++-dev \
+     libc++abi-dev \
+     lld-4.0 \
+     lldb
+
