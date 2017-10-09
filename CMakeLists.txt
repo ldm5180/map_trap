@@ -27,7 +27,7 @@ message("${CMAKE_BUILD_TYPE} build environment being generated in ${CMAKE_BINARY
 project(project-template)
 
 # Enable C++14.
-add_definitions(-std=c++14)
+add_definitions(-std=c++1z)
 
 # Set flags for all compilations.
 add_definitions("-Wall -Werror -pedantic -Wextra")

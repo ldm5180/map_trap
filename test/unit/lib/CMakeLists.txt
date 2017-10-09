@@ -8,7 +8,7 @@ target_link_libraries(lib_unit_test LINK_PUBLIC
 )
 add_unit_test(LibUnitTests lib_unit_test)
 
-add_executable(header_only_unit_test header_only.cpp)
+add_executable(header_only_unit_test header_only.cpp num_gen.cpp)
 target_link_libraries(header_only_unit_test LINK_PUBLIC
   gmock
   gtest_main
