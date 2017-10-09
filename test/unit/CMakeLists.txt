@@ -22,5 +22,7 @@ macro(add_unit_test target target_test)
 
 endmacro(add_unit_test)
 
+add_definitions(-Wno-zero-length-array)
 include_directories(${CMAKE_SOURCE_DIR}/vendor/googletest/googlemock/include)
+include_directories(${CMAKE_SOURCE_DIR}/vendor/GUnit/include)
 add_subdirectory(lib)

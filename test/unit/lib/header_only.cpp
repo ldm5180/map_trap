@@ -1,15 +1,10 @@
-#include <gmock/gmock.h>
+#include <GUnit.h>
 
 #include "header_only/header.hpp"
 
-class HeaderOnlyTest : public ::testing::Test {
-protected:
-  void SetUp() override { sut = LibHeader::HeaderOnly{2, 42}; }
-  void TearDown() override {}
+GTEST("Header Only") {
+  LibHeader::HeaderOnly sut{2, 42};
 
-  LibHeader::HeaderOnly sut{};
-};
-
-TEST_F(HeaderOnlyTest, should_multiply) { EXPECT_EQ(2 * 42, sut.mult()); }
-
-TEST_F(HeaderOnlyTest, should_add) { EXPECT_EQ(2 + 42, sut.add()); }
+  SHOULD("multiply") { EXPECT_EQ(2 * 42, sut.mult()); }
+  SHOULD("add") { EXPECT_EQ(2 + 42, sut.add()); }
+}
