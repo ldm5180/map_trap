@@ -6,8 +6,10 @@ sudo apt-get install -y \
      clang \
      clang-format \
      cmake \
+     libboost-dev \
      libc++-dev \
      libc++abi-dev \
+     linux-tools-generic \
      lld-4.0 \
      lldb
 

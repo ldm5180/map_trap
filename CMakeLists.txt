@@ -9,6 +9,8 @@ include(build_type)
 include(git_hooks)
 include(compiler_flags)  
 
+include_directories(include)
+
 set(BENCHMARK_ENABLE_TESTING OFF)
 set(BENCHMARK_ENABLE_INSTALL OFF)
 add_subdirectory(vendor/benchmark)
