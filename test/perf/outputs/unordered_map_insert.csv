@@ -1,0 +1,12 @@
+Run on (4 X 2594.09 MHz CPU s)
+2017-10-28 16:41:43
+name,iterations,real_time,cpu_time,time_unit,bytes_per_second,items_per_second,label,error_occurred,error_message
+"BM_unordered_map_insert/8",168358,4932.95,4928.94,ns,,,,,
+"BM_unordered_map_insert/16",116955,9903.44,9901.61,ns,,,,,
+"BM_unordered_map_insert/32",52430,16292.9,16291,ns,,,,,
+"BM_unordered_map_insert/64",22300,32077.5,32042.7,ns,,,,,
+"BM_unordered_map_insert/128",10000,65806.1,65797.1,ns,,,,,
+"BM_unordered_map_insert/256",6052,150556,150529,ns,,,,,
+"BM_unordered_map_insert/512",2664,255555,255515,ns,,,,,
+"BM_unordered_map_insert/1024",1000,527264,527165,ns,,,,,
+"BM_unordered_map_insert/2048",843,1.16637e+06,1.16615e+06,ns,,,,,

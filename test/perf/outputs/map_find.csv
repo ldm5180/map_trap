@@ -1,0 +1,8 @@
+Run on (4 X 2594.09 MHz CPU s)
+2017-10-28 16:39:19
+name,iterations,real_time,cpu_time,time_unit,bytes_per_second,items_per_second,label,error_occurred,error_message
+"BM_map_find<std::map<int, std::string>>/8",10067759,63.0742,63.0744,ns,,,,,
+"BM_map_find<std::map<int, std::string>>/16",9291247,74.2499,74.2501,ns,,,,,
+"BM_map_find<std::map<int, std::string>>/32",7639044,90.4937,90.4936,ns,,,,,
+"BM_map_find<std::map<int, std::string>>/64",5602796,122.607,122.606,ns,,,,,
+"BM_map_find<std::map<int, std::string>>/128",4164010,187.861,187.695,ns,,,,,

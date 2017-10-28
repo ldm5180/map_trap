@@ -1,8 +1,0 @@
-Run on (4 X 2594.09 MHz CPU s)
-2017-10-28 16:30:02
-name,iterations,real_time,cpu_time,time_unit,bytes_per_second,items_per_second,label,error_occurred,error_message
-"BM_map_iterate<std::map<int, std::string>>/8",713520,902.463,902.626,ns,,,,,
-"BM_map_iterate<std::map<int, std::string>>/16",168997,4100.97,4102.99,ns,,,,,
-"BM_map_iterate<std::map<int, std::string>>/32",39032,18274.7,18283.7,ns,,,,,
-"BM_map_iterate<std::map<int, std::string>>/64",7211,91646.6,91692.5,ns,,,,,
-"BM_map_iterate<std::map<int, std::string>>/128",1667,394343,394541,ns,,,,,

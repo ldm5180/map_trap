@@ -6,7 +6,7 @@ macro(add_perf_test target target_test)
   add_custom_target(run_${target_test} DEPENDS ${target_test}.passed)
 
   add_custom_command(OUTPUT ${target_test}.passed
-    PRE_BUILD COMMAND ${target_test} "--benchmark_out=${CMAKE_SOURCE_DIR}/test/perf/outputs/${target_test}.out" "--benchmark_out_format=csv"
+    PRE_BUILD COMMAND ${target_test} "--benchmark_out=${CMAKE_SOURCE_DIR}/test/perf/outputs/${target_test}.csv" "--benchmark_out_format=csv"
     COMMAND ${CMAKE_COMMAND} -E touch ${target_test}.passed
     DEPENDS ${target_test})
 endmacro(add_perf_test)
