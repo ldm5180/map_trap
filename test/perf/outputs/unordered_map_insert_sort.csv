@@ -1,12 +1,12 @@
 Run on (4 X 2594.09 MHz CPU s)
-2017-10-28 16:40:15
+2017-10-28 17:23:19
 name,iterations,real_time,cpu_time,time_unit,bytes_per_second,items_per_second,label,error_occurred,error_message
-"BM_unordered_map_insert_sort/8",1000,768672,768469,ns,,,,,
-"BM_unordered_map_insert_sort/16",1000,3.43057e+06,3.42523e+06,ns,,,,,
-"BM_unordered_map_insert_sort/32",612,8.76875e+06,8.76754e+06,ns,,,,,
-"BM_unordered_map_insert_sort/64",146,7.64083e+06,7.64077e+06,ns,,,,,
-"BM_unordered_map_insert_sort/128",100,2.13776e+07,2.13765e+07,ns,,,,,
-"BM_unordered_map_insert_sort/256",99,9.19262e+07,9.19101e+07,ns,,,,,
-"BM_unordered_map_insert_sort/512",23,7.71712e+07,7.71451e+07,ns,,,,,
-"BM_unordered_map_insert_sort/1024",10,1.27079e+08,1.27074e+08,ns,,,,,
-"BM_unordered_map_insert_sort/2048",10,5.95856e+08,5.95786e+08,ns,,,,,
+"BM_unordered_map_insert_sort/8",6149,826329,826273,ns,,,,,
+"BM_unordered_map_insert_sort/16",2911,779966,779945,ns,,,,,
+"BM_unordered_map_insert_sort/32",1000,518060,518017,ns,,,,,
+"BM_unordered_map_insert_sort/64",1000,1.15198e+06,1.15193e+06,ns,,,,,
+"BM_unordered_map_insert_sort/128",1000,2.53211e+06,2.53202e+06,ns,,,,,
+"BM_unordered_map_insert_sort/256",1000,5.59049e+06,5.59017e+06,ns,,,,,
+"BM_unordered_map_insert_sort/512",629,7.38089e+06,7.38056e+06,ns,,,,,
+"BM_unordered_map_insert_sort/1024",326,8.13748e+06,8.13656e+06,ns,,,,,
+"BM_unordered_map_insert_sort/2048",147,7.38283e+06,7.38219e+06,ns,,,,,

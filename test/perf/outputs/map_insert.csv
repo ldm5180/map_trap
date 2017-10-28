@@ -1,12 +1,12 @@
 Run on (4 X 2594.09 MHz CPU s)
-2017-10-28 16:42:43
+2017-10-28 17:24:57
 name,iterations,real_time,cpu_time,time_unit,bytes_per_second,items_per_second,label,error_occurred,error_message
-"BM_map_insert<std::map<int, std::string>>/8",100000,8887.49,8872.71,ns,,,,,
-"BM_map_insert<std::map<int, std::string>>/16",63877,18257.5,18252.2,ns,,,,,
-"BM_map_insert<std::map<int, std::string>>/32",22222,37297.3,37277.2,ns,,,,,
-"BM_map_insert<std::map<int, std::string>>/64",13320,81719.1,81688.4,ns,,,,,
-"BM_map_insert<std::map<int, std::string>>/128",5816,135416,135411,ns,,,,,
-"BM_map_insert<std::map<int, std::string>>/256",2836,307599,307592,ns,,,,,
-"BM_map_insert<std::map<int, std::string>>/512",1000,537601,537602,ns,,,,,
-"BM_map_insert<std::map<int, std::string>>/1024",736,1.09372e+06,1.09324e+06,ns,,,,,
-"BM_map_insert<std::map<int, std::string>>/2048",334,2.04454e+06,2.04451e+06,ns,,,,,
+"BM_map_insert<std::map<int64_t, int64_t>>/8",100000,6972.61,6971.59,ns,,,,,
+"BM_map_insert<std::map<int64_t, int64_t>>/16",99809,16469.8,16465.9,ns,,,,,
+"BM_map_insert<std::map<int64_t, int64_t>>/32",23371,33258.5,33249.8,ns,,,,,
+"BM_map_insert<std::map<int64_t, int64_t>>/64",10000,65245.4,65139.3,ns,,,,,
+"BM_map_insert<std::map<int64_t, int64_t>>/128",6685,135669,135644,ns,,,,,
+"BM_map_insert<std::map<int64_t, int64_t>>/256",3066,260319,260249,ns,,,,,
+"BM_map_insert<std::map<int64_t, int64_t>>/512",1402,517275,517178,ns,,,,,
+"BM_map_insert<std::map<int64_t, int64_t>>/1024",950,1.10112e+06,1.10025e+06,ns,,,,,
+"BM_map_insert<std::map<int64_t, int64_t>>/2048",387,2.08199e+06,2.07976e+06,ns,,,,,

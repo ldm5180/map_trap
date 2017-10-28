@@ -2,10 +2,9 @@
 
 #include <benchmark/benchmark.h>
 #include <cstdlib>
-#include <string>
 #include <unordered_map>
 
-using map_t = std::unordered_map<int, std::string>;
+using map_t = std::unordered_map<int64_t, int64_t>;
 
 static void BM_unordered_map_insert_sort_iterate(benchmark::State &state) {
   std::srand(42);

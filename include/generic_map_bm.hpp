@@ -5,7 +5,6 @@
 
 #include <boost/hana.hpp>
 #include <cstdlib>
-#include <string>
 
 static constexpr auto has_reserve =
     boost::hana::is_valid([](auto &&x) -> decltype((void)x.reserve(0)) {});

@@ -1,8 +1,8 @@
 Run on (4 X 2594.09 MHz CPU s)
-2017-10-28 16:39:14
+2017-10-28 17:22:34
 name,iterations,real_time,cpu_time,time_unit,bytes_per_second,items_per_second,label,error_occurred,error_message
-"BM_unordered_map_iterate/8",381737,1830.24,1822.16,ns,,,,,
-"BM_unordered_map_iterate/16",81484,8625.49,8625.07,ns,,,,,
-"BM_unordered_map_iterate/32",14539,48788.1,48786.6,ns,,,,,
-"BM_unordered_map_iterate/64",1989,326207,325582,ns,,,,,
-"BM_unordered_map_iterate/128",445,1.53505e+06,1.53311e+06,ns,,,,,
+"BM_unordered_map_iterate/8",565182,1188.53,1188.24,ns,,,,,
+"BM_unordered_map_iterate/16",123923,5460.66,5459.78,ns,,,,,
+"BM_unordered_map_iterate/32",19480,35499.4,35459.9,ns,,,,,
+"BM_unordered_map_iterate/64",2738,249403,249354,ns,,,,,
+"BM_unordered_map_iterate/128",505,1.24836e+06,1.24587e+06,ns,,,,,

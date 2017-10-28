@@ -1,8 +1,8 @@
 Run on (4 X 2594.09 MHz CPU s)
-2017-10-28 16:40:47
+2017-10-28 17:23:48
 name,iterations,real_time,cpu_time,time_unit,bytes_per_second,items_per_second,label,error_occurred,error_message
-"BM_map_iterate<boost::container::flat_map<int, std::string>>/8",968850,666.164,660.699,ns,,,,,
-"BM_map_iterate<boost::container::flat_map<int, std::string>>/16",252344,2723.95,2721.32,ns,,,,,
-"BM_map_iterate<boost::container::flat_map<int, std::string>>/32",57464,10734.9,10734.7,ns,,,,,
-"BM_map_iterate<boost::container::flat_map<int, std::string>>/64",13865,47814,47813.3,ns,,,,,
-"BM_map_iterate<boost::container::flat_map<int, std::string>>/128",3522,187994,187992,ns,,,,,
+"BM_map_iterate<boost::container::flat_map<int64_t, int64_t>>/8",15459024,44.527,44.5044,ns,,,,,
+"BM_map_iterate<boost::container::flat_map<int64_t, int64_t>>/16",5854030,120.866,120.864,ns,,,,,
+"BM_map_iterate<boost::container::flat_map<int64_t, int64_t>>/32",1656923,425.887,425.684,ns,,,,,
+"BM_map_iterate<boost::container::flat_map<int64_t, int64_t>>/64",388108,1765.79,1765.77,ns,,,,,
+"BM_map_iterate<boost::container::flat_map<int64_t, int64_t>>/128",87346,8279.49,8275.62,ns,,,,,
