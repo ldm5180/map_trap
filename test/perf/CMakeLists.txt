@@ -11,53 +11,18 @@ macro(add_perf_test target target_test)
     DEPENDS ${target_test})
 endmacro(add_perf_test)
 
-### std::map #########################################################
-
-add_executable(map_insert map_insert.cpp)
-target_link_libraries(map_insert benchmark)
-add_perf_test(map_insert_test map_insert)
-
-add_executable(map_iterate map_iterate.cpp)
-target_link_libraries(map_iterate benchmark)
-add_perf_test(map_iterate_test map_iterate)
-
-add_executable(map_find map_find.cpp)
+add_executable(map_find find.cpp)
 target_link_libraries(map_find benchmark)
 add_perf_test(map_find_test map_find)
 
-### boost::container::flat_map #######################################
+add_executable(map_iterate iterate.cpp)
+target_link_libraries(map_iterate benchmark)
+add_perf_test(map_iterate_test map_iterate)
 
-add_executable(flat_map_insert flat_map_insert.cpp)
-target_link_libraries(flat_map_insert benchmark)
-add_perf_test(flat_map_insert_test flat_map_insert)
+add_executable(map_insert insert.cpp)
+target_link_libraries(map_insert benchmark)
+add_perf_test(map_insert_test map_insert)
 
-add_executable(flat_map_iterate flat_map_iterate.cpp)
-target_link_libraries(flat_map_iterate benchmark)
-add_perf_test(flat_map_iterate_test flat_map_iterate)
-
-add_executable(flat_map_find flat_map_find.cpp)
-target_link_libraries(flat_map_find benchmark)
-add_perf_test(flat_map_find_test flat_map_find)
-
-### std::unordered_map ###############################################
-
-add_executable(unordered_map_insert unordered_map_insert.cpp)
-target_link_libraries(unordered_map_insert benchmark)
-add_perf_test(unordered_map_insert_test unordered_map_insert)
-
-add_executable(unordered_map_insert_sort unordered_map_insert_sort.cpp)
-target_link_libraries(unordered_map_insert_sort benchmark)
-add_perf_test(unordered_map_insert_sort_test unordered_map_insert_sort)
-
-add_executable(unordered_map_iterate unordered_map_iterate.cpp)
-target_link_libraries(unordered_map_iterate benchmark)
-add_perf_test(unordered_map_iterate_test unordered_map_iterate)
-
-add_executable(unordered_map_insert_sort_iterate unordered_map_insert_sort_iterate.cpp)
-target_link_libraries(unordered_map_insert_sort_iterate benchmark)
-add_perf_test(unordered_map_insert_sort_iterate_test unordered_map_insert_sort_iterate)
-
-add_executable(unordered_map_find unordered_map_find.cpp)
-target_link_libraries(unordered_map_find benchmark)
-add_perf_test(unordered_map_find_test unordered_map_find)
-
+add_executable(map_book book.cpp)
+target_link_libraries(map_book benchmark)
+add_perf_test(map_book_test map_book)
