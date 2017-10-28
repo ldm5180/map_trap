@@ -1,12 +1,12 @@
 # Set flags for all compilations.
 add_definitions("-Wall -Werror -pedantic -Wextra")
 add_definitions(-std=c++1z)
-add_definitions(-stdlib=libc++)
-add_definitions(-nodefaultlibs)
+#add_definitions(-stdlib=libc++)
+#add_definitions(-nodefaultlibs)
 
-set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -fuse-ld=lld")
+#set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -fuse-ld=lld")
 
-link_libraries(c++ c++abi)
+#link_libraries(c++ c++abi)
 
 # Set debug build flags.
 set(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -g -fno-omit-frame-pointer")

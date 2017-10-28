@@ -1,0 +1,8 @@
+Run on (4 X 2594.09 MHz CPU s)
+2017-10-28 16:29:21
+name,iterations,real_time,cpu_time,time_unit,bytes_per_second,items_per_second,label,error_occurred,error_message
+"BM_map_find<boost::container::flat_map<int, std::string>>/8",13324564,47.1847,47.2061,ns,,,,,
+"BM_map_find<boost::container::flat_map<int, std::string>>/16",13487669,50.572,50.5905,ns,,,,,
+"BM_map_find<boost::container::flat_map<int, std::string>>/32",10349341,59.5437,59.5415,ns,,,,,
+"BM_map_find<boost::container::flat_map<int, std::string>>/64",9065180,83.2853,83.3252,ns,,,,,
+"BM_map_find<boost::container::flat_map<int, std::string>>/128",5935698,118.051,118.105,ns,,,,,

@@ -1,0 +1,12 @@
+Run on (4 X 2594.09 MHz CPU s)
+2017-10-28 16:28:18
+name,iterations,real_time,cpu_time,time_unit,bytes_per_second,items_per_second,label,error_occurred,error_message
+"BM_map_insert<boost::container::flat_map<int, std::string>>/8",3166,653623,653826,ns,,,,,
+"BM_map_insert<boost::container::flat_map<int, std::string>>/16",1000,854213,848467,ns,,,,,
+"BM_map_insert<boost::container::flat_map<int, std::string>>/32",1000,3.31548e+06,3.30681e+06,ns,,,,,
+"BM_map_insert<boost::container::flat_map<int, std::string>>/64",499,6.49717e+06,6.49211e+06,ns,,,,,
+"BM_map_insert<boost::container::flat_map<int, std::string>>/128",100,5.3328e+06,5.33535e+06,ns,,,,,
+"BM_map_insert<boost::container::flat_map<int, std::string>>/256",100,2.11478e+07,2.11328e+07,ns,,,,,
+"BM_map_insert<boost::container::flat_map<int, std::string>>/512",75,6.2592e+07,6.26064e+07,ns,,,,,
+"BM_map_insert<boost::container::flat_map<int, std::string>>/1024",20,6.79413e+07,6.7971e+07,ns,,,,,
+"BM_map_insert<boost::container::flat_map<int, std::string>>/2048",10,1.33784e+08,1.33849e+08,ns,,,,,
