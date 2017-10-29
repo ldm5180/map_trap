@@ -5,19 +5,22 @@
 
 #include <cstdlib>
 
-template <class map_t> static void BM_map_book(benchmark::State &state) {
+template <class map_t, int levels>
+static void BM_map_book(benchmark::State &state) {
   std::srand(42);
   map_t map{};
   std::vector<typename map_t::key_type> keys;
-  keys.reserve(100);
-  add_to_map_and_key_list(100, map, keys,
+  keys.reserve(levels);
+  add_to_map_and_key_list(levels, map, keys,
                           /* is_sorted = */ false);
 
   const auto is_top_update = [] { return std::rand() % 2 == 0; };
   const auto is_remove_level = [&state] {
     return std::rand() % (100 / state.range(0)) == 0;
   };
-  const auto non_top_price_level = [&keys] { return keys[std::rand() % 100]; };
+  const auto non_top_price_level = [&keys] {
+    return keys[std::rand() % levels];
+  };
 
   constexpr auto is_unordered = std::is_same<
       std::unordered_map<typename map_t::key_type, typename map_t::mapped_type>,
