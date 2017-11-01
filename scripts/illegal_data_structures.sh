@@ -12,7 +12,7 @@ echo
 echo "Detecting coding standards violations:"
 for ds in ${ILLEGAL_DATA_STRUCTURES[@]}; do
     printf "    ${YELLOW}${ds}${NC}"
-    git grep -q "${ds}"
+    git grep -q "${ds}" -- './*' ':(exclude)*.sh'
     result=$?
     
     if [ ${result} == 0 ]; then
@@ -25,10 +25,10 @@ done
 
 for violation in ${VIOLATIONS[@]}; do
     echo
-    printf "${RED}*** ${ds} usage detected ***${YELLOW}\n"
-    printf "    ${ds} violates this project's coding standards.\n"
+    printf "${RED}*** ${violation} usage detected ***${YELLOW}\n"
+    printf "    ${violation} violates this project's coding standards.\n"
     printf "    Number of violations found in files:${NC}\n"
-    git grep -c "${ds}"
+    git grep -c "${violation}" -- './*' ':(exclude)*.sh'
     echo
 done
 
